@@ -6,9 +6,5 @@ yarn install
 yarn build
 cd ../b
 yarn install
-yarn build
-cd ../c
-yarn install
-yarn build
 yarn test
 ```
