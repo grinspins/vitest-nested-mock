@@ -1,5 +1,6 @@
-import {doRequest} from "a"
+import {request} from "a"
 
-export const request = async () => {
-  await doRequest()
+
+export const requestor = async () => {
+  await request()
 }

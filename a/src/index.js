@@ -1,5 +1,5 @@
-import axios from "axios"
+import axios from 'axios'
 
-export const doRequest = async () => {
-  await axios.get("some url")
+export const request = async () => {
+  await axios.get("my url")
 }

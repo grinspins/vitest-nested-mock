@@ -1,11 +1,14 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  build: {
-    lib: {
-      entry: ["./src/index.js"],
-      name: "b",
-      fileName: "index"
-    },
-  }
+  test: {
+    include: ["./test/test.js"],
+    globals: true,
+    environment: "jsdom",
+    server: {
+      deps: {
+        inline: ["a"]
+      }
+    }
+  },
 });
